@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <h1>
+            Sistema Integrado de gestion
+        </h1>
+        <img src="icons/descarga (2).png" alt="usuario" id="usuario" class="usuario">
+        <p class="usuario">usuario</p>
+    </header>
+    <nav>
+        <label for="busqueda" class="busq" id="bus-web">Buscar en la web</label>
+        <input type="text" class="busq" id="busqueda">
+        <figure >
+            <img src="icons/search_black_24dp.svg" alt="buscar" id="buscar">
+            <figcaption>Buscar</figcaption>
+        </figure>
+    </nav>
+    <main>
+        <form action="" method="POST">
+            <fieldset >
+                <legend>Agregar producto</legend>
+                <label for="codigo">Codigo: </label>
+                <input type="tel" id="codigo" pattern="[0-9]{6}">
+                <button>Validar</button>
+                <br>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Solo letras y numeros" pattern="[a-zAZ]" maxlength="100">
+                <br>
+                <label for="abreviatura">Abreviatura</label>
+                <input type="text" id="abreviatura" placeholder="Solo letras" pattern="[a-zAZ]" maxlength="10">
+                <br>
+                <label for="categoria">Categoria: </label>
+                <select id="categoria">
+                    <option value="lacteos" selected>Lacteos</option>
+                    <option value="pasteles">Pasteles</option>
+                    <option value="panes-especiales">Panes especiales</option>
+                </select>
+                <br>
+                <label for="ruc">Ruc:</label>
+                <input type="tel" id="ruc" placeholder="Solo numeros">
+                <br>
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" min="1" step="0.01">
+                <br>
+                <label for="color-etiqueta">Color de etiqueta</label>
+                <input type="color" name="color-etiqueta" id="color-etiqueta">
+                <br>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+                <br>
+
+                <label for="estado">Estado: </label>
+                <input type="radio" name="estado" id="Activo" checked>
+                <label for="Activo" class="opciones">Activo</label>
+                <input type="radio" name="estado" id="suspendido">
+                <label for="suspendido" class="opciones">Suspendido</label>
+                <input type="radio" name="estado" id="baja">
+                <label for="baja" class="opciones">De baja</label>
+                <br>
+                <label for="impuesto">Afecto a impuesto:</label>
+                <input type="checkbox" id="impuesto">
+                <br>
+                <label for="foto">Foto:</label>
+                <input type="file" accept="image/png,image/jpeg">
+                <img src="icons/image_black_24dp.svg" alt="foto" id="foto" >
+                <br>
+                <label for="descripcion">Descripcion:</label>
+                <input type="text" id="descripcion" >
+                <br>
+                <button type="submit" class="fin">Grabar</button>
+                <button type="reset" class="fin">Limpiar</button>
+            </fieldset>
+        </form>
+    </main>
+    <aside>
+        <h1>
+            Menú
+        </h1>
+        <button class="menu" >
+            <label for="agre-prod">Agregar producto</label>
+            <br>
+            <img src="icons/add_black_24dp.svg" alt="agre-prod" class="img-but" id="agre-prod">
+        </button>
+        <button class="menu" >
+           <label for="adm.cat">Administrar categorías</label>
+           <br>
+           <img src="icons/edit_black_24dp.svg" alt="adm.cat" class="img-but" id="adm.cat">
+        </button>
+        <button class="menu" >
+            <label for="exist">Existencias</label>
+            <br>
+            <img src="icons/list_black_24dp.svg" alt="exist" class="img-but" id="exist">
+        </button>
+        <button class="menu" >
+            <label for="adm-pay">Administrar pagos</label>
+            <br>
+            <img src="icons/credit_card_black_24dp.svg" alt="adm-pay" class="img-but" id="adm-pay">
+        </button>
+        
+    </aside>
+    <footer>
+        <a href="" class="enlace-pie"> ¿Que hacemos?</a>
+        <a href="" class="enlace-pie">Enlaces principales</a>
+        <a href="" class="enlace-pie">Contáctanos</a>
+    </footer>
+</body>
+</html>
